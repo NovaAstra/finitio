@@ -22,12 +22,17 @@ export interface TransitionDefinition extends TransitionConfig {
 }
 
 export interface StateNodeDefinition {
-    id: string;
     version?: string;
     description?: string;
     transitions?: Array<TransitionDefinition>
 }
 
 export class StateNode {
+    public get definition(): StateNodeDefinition {
+        return {}
+    }
 
+    public toJSON(): StateNodeDefinition {
+        return this.definition;
+    }
 }
