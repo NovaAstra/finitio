@@ -27,7 +27,15 @@ export interface StateNodeDefinition {
     transitions?: Array<TransitionDefinition>
 }
 
+export interface StateNodeConfig {
+
+}
+
 export class StateNode {
+    public constructor(
+        public config: StateNodeConfig
+    ) { }
+
     public get definition(): StateNodeDefinition {
         return {}
     }
