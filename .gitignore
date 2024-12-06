@@ -1,0 +1,55 @@
+# pnpm
+.pnpm-store
+
+# dependencies
+node_modules
+
+# compiled
+lib
+dist
+build
+coverage
+
+# nuxt.js build / generate output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+**/.vitepress/cache
+
+# rush-specific
+common/temp
+common/autoinstallers/*/.npmrc
+**/.rush
+
+# misc
+.DS_Store
+.vscode
+.idea
+
+# debug
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# typescript
+*.tsbuildinfo
+
+# dotenv environment variables file
+.env
+.env.*
+!.env.example
+
+# output of 'npm pack'
+*.tgz
+
+# typedoc
+typedoc
+
+# vite & vitest temporary configs
+vite.config.ts.*
+vitest.config.ts.*
